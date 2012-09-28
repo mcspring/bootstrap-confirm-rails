@@ -19,6 +19,7 @@ Or you can install it youself by:
 == Usage
 
 In your view file:
+
 ```
 confirm_form_tag @model_name, 'data-confirm' => 'Are you sure?' do |f|
   f.submit 'Delete'
