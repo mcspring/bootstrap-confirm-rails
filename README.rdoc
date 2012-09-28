@@ -10,7 +10,7 @@ This will overwrite rails' *$.rails.allowAction* function to use custom delete c
 
 2. run *bundle* to install dependences
 
-   $ bundle
+    $ bundle
 
 Or you can install it youself by:
 
@@ -23,6 +23,15 @@ In your view file:
   confirm_form_tag @model_name, 'data-confirm' => 'Are you sure?' do |f|
     f.submit 'Delete'
   end
+
+With all options:
+
+  confirm_form_tag @model_name, 'data-confirm' => 'Are you sure?', 'data-confirm-body' => 'This will destroy data from database', 'data-confirm-ok' => 'Delete', 'data-confirm-cancel' => 'Cancel' do |f|
+    f.submit 'Delete'
+  end
+
+*NOTE*: You can use *data-confirm-shortcut* option to reduce input. And this will use *BootstrapConfirmRails.shortcut_template* to produce result.
+
 
 == Copyright
 
