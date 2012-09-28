@@ -6,11 +6,11 @@ This will overwrite rails' *$.rails.allowAction* function to use custom delete c
 
 1. add follow to your *Gemfile*
 
-  gem 'bootstrap-confirma-rails'
+    gem 'bootstrap-confirma-rails'
 
 2. run *bundle* to install dependences
 
-  $ bundle
+   $ bundle
 
 Or you can install it youself by:
 
