@@ -1,3 +1,30 @@
-= BootstrapConfirmRails
+= Bootstrap Confirm Rails
 
-This project rocks and uses MIT-LICENSE.
+This will overwrite rails' $.rails.allowAction function to use custom delete confirmation dialog with Bootstrap modal. And this also add new form helper `confirm_form_tag` for more adaptive use.
+
+== Installation
+
+1. add follow to your *Gemfile*
+
+    gem 'bootstrap-confirma-rails'
+
+2. run `bundle` to install dependences
+
+    $ bundle
+
+Or you can install it youself by:
+
+    $ gem install bootstrap-confirm-rails
+
+== Usage
+
+In your view file:
+```
+confirm_form_tag @model_name, 'data-confirm' => 'Are you sure?' do |f|
+  f.submit 'Delete'
+end
+```
+
+== Copyright
+
+Copyright (c) 2012 Spring MC. See LICENSE[https://raw.github.com/mcspring/bootstrap-confirm-rails/master/MIT-LICENSE] for details
