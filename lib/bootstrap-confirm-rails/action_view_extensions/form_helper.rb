@@ -15,7 +15,7 @@ module BootstrapConfirmRails
           options['data-confirm'] = BootstrapConfirmRails.shortcut_template % options.delete('data-confirm-shortcut')
         end
 
-        options = {'data-confirm-ok' => BootstrapConfirmRails.confirm_ok, 'data-confirm-cancel' => BootstrapConfirmRails.confirm_cancel}.merge(options)
+        options = {:method => :delete, 'data-confirm-ok' => BootstrapConfirmRails.confirm_ok, 'data-confirm-cancel' => BootstrapConfirmRails.confirm_cancel}.merge(options)
 
         form_tag(*(args + [options]), &block)
       end
