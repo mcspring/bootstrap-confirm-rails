@@ -1,0 +1,16 @@
+// Overwrite bootstrap modal header && footer styles for custom rails delete confirmation dialog
+#rails_confirm_dialog{
+  form{
+    display:inline-block;
+    margin:0;
+    padding:0;
+  }
+  .modal-footer{
+    padding:8px 14px 10px;
+  }
+}
+#rails_confirm_dialog.modal-mini{
+  .modal-header{
+    padding:16px 21px;
+  }
+}
