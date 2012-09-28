@@ -6,7 +6,8 @@ require "bootstrap-confirm-rails/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "bootstrap-confirm-rails"
-  s.version     = BootstrapConfirmRails::VERSION
+  s.version     = BootstrapConfirmRails::VERSION.dup
+  s.platform    = Gem::Platform::RUBY
   s.authors     = ["Spring MC"]
   s.email       = ["Heresy.Mc@gmail.com"]
   s.homepage    = "https://github.com/mcspring/bootstrap-confirm-rails"
@@ -14,6 +15,7 @@ Gem::Specification.new do |s|
   s.description = "Applies a custom delete confirmation dialog for rails default data-confirm action."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.require_paths = ["lib"]
 
   s.add_dependency "rails", "~> 3.2.8"
   s.add_dependency "sass-rails", "~> 3.2.5"
