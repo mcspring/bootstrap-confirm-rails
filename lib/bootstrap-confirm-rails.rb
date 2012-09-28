@@ -1,7 +1,7 @@
 require 'action_view'
-require 'bootstrap-confirm-require/version'
-require 'bootstrap-confirm-require/engine'
-require 'bootstrap-confirm-require/action_view_extensions/form_helper'
+require 'bootstrap-confirm-rails/version'
+require 'bootstrap-confirm-rails/engine'
+require 'bootstrap-confirm-rails/action_view_extensions/form_helper'
 
 module BootstrapConfirmRails
   class Error < StandardError; end
