@@ -18,6 +18,16 @@ Or you can install it youself by:
 
 == Usage
 
+Setup dependence assets:
+
+1. In your *application.js*
+
+    //= require bootstrap-confirm-rails
+
+2. In your *application.scss*
+
+    @import "bootstrap-confirm-rails";
+
 In your view file:
 
   confirm_form_tag @model_name, 'data-confirm' => 'Are you sure?' do |f|
@@ -30,7 +40,7 @@ With all options:
     f.submit 'Delete'
   end
 
-*NOTE*: You can use *data-confirm-shortcut* option to reduce input. And this will use *BootstrapConfirmRails.shortcut_template* to produce result.
+*NOTE*: You can use *data-confirm-shortcut* option to reduce input. And this will use *BootstrapConfirmRails.shortcut_template* to produce result in *BootstrapConfirmRails.shortcut_template % confirm_shortcut_data* form.
 
 
 == Copyright
