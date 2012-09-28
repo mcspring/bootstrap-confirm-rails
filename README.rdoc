@@ -1,30 +1,28 @@
 = Bootstrap Confirm Rails
 
-This will overwrite rails' $.rails.allowAction function to use custom delete confirmation dialog with Bootstrap modal. And this also add new form helper `confirm_form_tag` for more adaptive use.
+This will overwrite rails' *$.rails.allowAction* function to use custom delete confirmation dialog with Bootstrap modal. And this also add new form helper *confirm_form_tag* for more adaptive use.
 
 == Installation
 
 1. add follow to your *Gemfile*
 
-    gem 'bootstrap-confirma-rails'
+  gem 'bootstrap-confirma-rails'
 
-2. run `bundle` to install dependences
+2. run *bundle* to install dependences
 
-    $ bundle
+  $ bundle
 
 Or you can install it youself by:
 
-    $ gem install bootstrap-confirm-rails
+  $ gem install bootstrap-confirm-rails
 
 == Usage
 
 In your view file:
 
-```
-confirm_form_tag @model_name, 'data-confirm' => 'Are you sure?' do |f|
-  f.submit 'Delete'
-end
-```
+  confirm_form_tag @model_name, 'data-confirm' => 'Are you sure?' do |f|
+    f.submit 'Delete'
+  end
 
 == Copyright
 
